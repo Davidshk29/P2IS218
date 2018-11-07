@@ -64,10 +64,41 @@
 		</label>
 			<td><?php echo ":$qskills<br/>";?></td>
 		<tr>
-		
 			<td><a href="login.html"> Log Out </a></td>
+		</tr>
 		</form>
+		<form action="questionV.php" method="get">
+		<table align="center" >
+		<tr>
+		<td><h1>New Questions</h1></td>
+		<td><p></p></td>
+		
+		<tr>
+		<label for="qname1">
+			<td><b>Question Name</b></td>
+		</label>
+		<td><input type="text" placeholder="Enter Question" id="qname1" name="qname1" ></td>
+		
+		<tr>
+		<label for="qbody1">
+			<td><b>Question Body</b></td>
+		</label>
+		<td><input type="text" placeholder="Enter answer" id="qbody1" name="qbody1"  rows="4" cols="50" maxlength="50" name="comment"></td>
+		
+		<tr>
+		<label for="qskills">
+			<td><b>Question Skills</b></td>
+		</label>
+			<td><input type="text" placeholder="Enter Skills" id="qskills" name="qskills" ></td>
+		<tr>
+
+		<tr>
+		<td><input type="submit"></td>
+
+	</table>
+	</form>
 	</div>
+
 </body>
 </html>
 

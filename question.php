@@ -49,9 +49,9 @@
 	</form>
 <?php
 if(isset($_POST['register'])){
-	@$question=$_POST['qname1'];
-	@$questionbody=$_POST['qbody1'];
-	@$skills=$_POST['qskills'];
+	$question=$_POST['qname1'];
+	$questionbody=$_POST['qbody1'];
+	$skills=$_POST['qskills'];
 
 	if($query_run){
 		else{
