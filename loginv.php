@@ -22,9 +22,9 @@ if($validLogin){
   echo "Password: Can't tell you the password lol<br/>";
   mysql_connect (localhost, username, password);
    
-mysql_select_db (dbname);
+mysql_select_db (shk29);
 
-mysql_query ("INSERT INTO tablename (first_name, password) VALUES ('$email1', ; '$password')");
+mysql_query ("INSERT INTO tablename (email1, password) VALUES ('$email1', ; '$password')");
 
 print ($email1);
 
@@ -34,16 +34,16 @@ print ($password);
 
 print (“<p>”);
 
-print (“Thanks for submitting your name.”);
+print ("You have submitted your email");
 
 }
 ?> 
 <?php
 			if(isset($_POST['login']))
 			{
-				@$email=$_POST['email'];
-				@$password=$_POST['password'];
-				$query = "select * from userinfotbl where email='$email' and password='$password' ";
+				$email=$_POST['email'];
+				$password=$_POST['password'];
+				$query = "select * from acc where email='$email' and pass='$password' ";
 				//echo $query;
 				$query_run = mysqli_query($con,$query);
 				//echo mysql_num_rows($query_run);
