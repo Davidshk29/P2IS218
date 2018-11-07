@@ -1,0 +1,56 @@
+<?php
+	session_start();
+	require_once('connection.php');
+?>
+<!DOCTYPE html>
+<html lang="en-US">
+	
+	<head>
+		<title>signup</title>
+	</head>
+	<body>
+	<form action="validate.php" method="get">
+		<table align="center" style="background-color:SlateBlue;" border= 2px solid red; border-radius: 5px;>
+		<tr>
+		<td><h1>Sign Up</h1></td>
+		<td><p>Please fill in this form to create an account.</p></td>
+		
+		<tr>
+		<label for="fname">
+			<td><b>First Name</b></td>
+		</label>
+		<td><input type="text" placeholder="Enter First Name" name="fname" id="fname"  ></td>
+		
+		<tr>
+		<label for="lname">
+			<td><b>Last Name</b></td>
+		</label>
+		<td><input type="text" placeholder="Enter Last Name" name="lname" id="lname" ></td>
+		
+		<tr>
+		<label for="email">
+			<td><b>Email</b></td>
+		</label>
+		<td><input type="text" placeholder="Enter Email" name="email" id="email" ></td>
+		
+		<tr>
+		<label for="birthday">
+			<td><b>Birthday</b></td>
+		</label>
+		<td><input type="text" placeholder="Enter Birthday" name="birthday" id="birthday" ></td>
+		
+		<tr>
+		<label for="pass">
+			<td><b>Password</b></td>
+		</label>
+			<td><input type="password" placeholder="Enter Password" name="pass" required  minlength="8" maxlength="12" ></td>
+		<tr>
+
+		<tr>
+		<td><input name="register" type="submit"></td>
+
+	</table>
+	</form>
+
+</body>
+</html>

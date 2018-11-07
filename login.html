@@ -1,0 +1,43 @@
+<?php
+	session_start();
+	require_once('connection.php');
+?>
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<title>Login</title>
+		<style>
+		h1 {color:red;}
+		p {color:blue;}
+		form { max-width: 300px; margin: 10px auto; padding: 10px 20px; background: #f4f7f8; border-radius: 8px;}
+		body { font-family: 'Nunito', sans-serif; color: #065371; background-color:   #61A5BC;}
+
+	</style>
+	</head>
+	<body>
+	<form action="loginv.php" method="get">
+		<table align="center">
+			<tr>
+				<td><h1>Sign In</h1></td>
+				<td><p><a href="question.html">:  If login doesn't work </a></p></td>
+		
+			<tr>
+			<label for="email">
+				<td>Email:</td>
+				<td><input type="text" name="email" placeholder="enter your email" id="email"></td>
+			</label>
+			<tr>
+			<label for="password">
+				<td>password:</td>
+				<td><input type="password" name="password" value="admin" minlength="8" maxlength="12"></td>
+			</label>
+			<tr>
+				<td>
+					<input name="login" type="submit">
+				<td>
+					<a href="signup1.php"> Create Account </a>
+				</td>
+		</table>
+	</form>
+	</body>
+</html>
